@@ -1,0 +1,66 @@
+
+{% extends "base.html" %}
+{% block head %}
+    <link rel="stylesheet" href="{{ url_for('static', filename='main.css') }}">
+    
+    <title>SEO CHECK PAGE</title>
+{% endblock head %}
+{% block body %}
+<nav class="navbar navbar-light bg-light">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">
+        <img src="{{ url_for('static', filename='fcpo.png') }}" alt="fcpo logo SEO" width="120" height="80" class="d-inline-block align-text-top" />
+        
+      </a>
+    </div>
+  </nav>
+<form class='box' action="" method="POST" >
+    <h2>SEO norms checker</h2>
+    <label for="url"><h4>Enter your URL:</h4></label><br>
+    <input type="text" name="url" placeholder="Enter url here.." required><br>
+    
+    {% block content%}
+        {% with messages = get_flashed_messages() %}
+            {% if messages %}
+                {% for msg in messages %}
+                    <h5>{{ msg }} </h5>
+                {% endfor %}
+            {% endif %}
+        {% endwith %}
+    {% endblock content%}
+    <label for="url"><h4>Enter your keyowrd:</h4></label><br>
+    <input type="text" name="keyword" placeholder="your keyword here.." required><br>
+    <input class="small-btn" type="submit" name="check" value="check">
+    
+  </form>
+  <script>
+    window.addEventListener( "pageshow", function ( event ) {
+  var historyTraversal = event.persisted || 
+                         ( typeof window.performance != "undefined" && 
+                              window.performance.navigation.type === 2 );
+  if ( historyTraversal ) {
+    // Handle page restore.
+    window.location.reload();
+  }
+});
+  </script>
+<!-- <p>{{tim}} </p>
+
+<p>{{title}} </p>
+<p>{{stop_words}} </p>
+<p>{{title_length}} </p>
+<p>{{key_url}} </p>
+<p>{{url_length}} </p>
+<p>{{var_h1}} </p>
+<p>{{var_h2}} </p> -->
+<!-- {%for elm in var_img %}
+<p>{{elm}} </p>
+{% endfor %} -->
+<!-- <p>{{meta_desc}} </p>
+<p>{{meta_desc_length}} </p>
+<h2>the search engine is not allowed to access these pages:</h2>
+{% for elm in robot_txt %}
+<p>{{url + elm}} </p>
+{% endfor %} -->
+
+{% endblock body%}
