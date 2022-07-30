@@ -3,7 +3,7 @@
 # Description
 this project was created to build a web application  checking the Search Engine Optimisation of any website using Python and flask
 
-![img](./src/assets/icon/logo2.png)
+![img](./static/logo2.png)
 
 
 ## Summary
