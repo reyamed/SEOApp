@@ -33,7 +33,8 @@ this project was created to build a web application  checking the Search Engine 
 
 Anaconda is a distribution of the Python and R programming languages for scientific computing (data science, machine learning applications, large-scale data processing, predictive analytics, etc.), that aims to simplify package management and deployment.
 
-https://en.wikipedia.org/wiki/Anaconda_%28Python_distribution%29
+![img](https://en.wikipedia.org/wiki/Anaconda_%28Python_distribution%29#/media/File:Anaconda_Logo.png)
+
 
 Next open Anaconda Prompt, create a new virtual environnement and install the necessary libraries:
 
@@ -51,25 +52,25 @@ Next open Anaconda Prompt, create a new virtual environnement and install the ne
 
 this is the home page of our webapp
 
-![img](./sreenshots/home.png)
+![img](./screenshots/home.png)
 
 #### Form page
 
 this is the page where we have to put the link of the website that will be analysed along with its main keyword
 
-![img](./sreenshots/form.png)
+![img](./screenshots/form.png)
 
 #### Invalid link
 
 this page shows up in case the link provided is not valid
 
-![img](./sreenshots/invalid.png)
+![img](./screenshots/invalid.png)
 
 #### Results
 
 this is the page where the results of the website SEO analysis are shown
 
-![img](./sreenshots/results.png)
+![img](./screenshots/results.png)
 
 ## Version
 
