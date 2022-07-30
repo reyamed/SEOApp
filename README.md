@@ -33,7 +33,7 @@ this project was created to build a web application  checking the Search Engine 
 
 Anaconda is a distribution of the Python and R programming languages for scientific computing (data science, machine learning applications, large-scale data processing, predictive analytics, etc.), that aims to simplify package management and deployment.
 
-https://en.wikipedia.org/wiki/Anaconda_%28Python_distribution%29#/media/File:Anaconda_Logo.png
+![img](https://mrmint.fr/wp-content/uploads/2017/09/anaconda_logo-1024x512.png)
 
 
 Next open Anaconda Prompt, create a new virtual environnement and install the necessary libraries:
