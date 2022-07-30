@@ -18,6 +18,7 @@ Disallow: /login_and_go
 Disallow: /payment/
 Disallow: /games/archive
 Disallow: /games/search
+Disallow: /topic/
 
 User-agent: *
 Disallow: /*/login_
@@ -25,5 +26,43 @@ Disallow: /*/login_and_go
 Disallow: /*/payment/
 Disallow: /*/games/archive
 Disallow: /*/games/search
+Disallow: /*/topic/
 
 Sitemap: https://www.chess.com/sitemapindex.xml
+
+#                     .,;;::;;,.
+#                  .:codddddollll;.
+#                .ccoxxxxxxxdlllllc;.
+#               'llcxxxxxxxdlllllllc:.
+#              .lllxxxxxdollllllllll::.
+#              ;lllouuolllllllllllll::'
+#              ,llllllllllllllllllll::'
+#              .lllllllllllllllllll:::.
+#               .llllllllllllllllc:::.
+#                .cllllllllllllc:::;.
+#                  ,llllllllc:::::'
+#               .,cllllllllllc:::::;..
+#            .,llllllllllllllllc::::::::.
+#           illlllllllllllllllllc::::::::;
+#           clllllllllllllllllllc::::::::;
+#           .;;;;;;;cllllllllllc:;'''''''`
+#                   .::::::::::::.
+#                   ,iiiccc;:::::.
+#                   cllllllll::::;
+#                  .llllllllli::::.
+#                 .lllllllllli::::;.
+#                .lllllllllll::::::;.
+#               ,llllllllllll::::::::,
+#             .clllllllllllli:::::::::;.
+#           .cllllllllllllll::::::::::::;.
+#         ,illllllllllllllli::::::::::::::;.
+#      .:llllllllllllllllll::::::::::::::::::,
+#     :llllllllllllllllllll::::::::::::::::::::,
+#    cllllllllllllllllllll::::::::::::::::::::::;
+#   cllllllllllllllllllll::::::::::::::::::::::::;
+#  ':www.chess.com/jobs:::::::::::::::::::::::::::.
+#  ;:::::::::::::::::::::::::::::::::::::::::::::::
+#  ::::::::::::::::::::::::::::::::::::::::::::::::
+#  ;::::::::::::::::::::::::::::::::::::::::::::::;
+#   ..,,;::::::::::::::::::::::::::::::::::::;,...
+#           ........''''''''''''''........

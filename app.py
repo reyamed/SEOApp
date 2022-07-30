@@ -11,6 +11,12 @@ app.secret_key = "hello"
 @app.route('/', methods=['POST', 'GET'])
 def main():
     if request.method == "POST":
+        return redirect(url_for('home'))
+    return render_template('home.html')
+
+@app.route('/home', methods=['POST', 'GET'])
+def home():
+    if request.method == "POST":
         url = request.form['url']
         keyword = request.form['keyword']
         try:
@@ -20,7 +26,7 @@ def main():
         except (HTTPError, ValueError):
             # print("non valid link")
             flash("invalid link (try using https://)")
-            return redirect(url_for('main'))
+            return redirect(url_for('home'))
         
         session['url'] = url
         session['keyword'] = keyword

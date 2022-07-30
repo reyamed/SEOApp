@@ -1,0 +1,88 @@
+
+{% extends "base.html" %}
+{% block head %}
+    <title>SNC</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='home.css') }}">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" charset="utf-8"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css">
+  
+    <!-- bootstrap -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+      integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous" />
+    <!-- Font Awesome Library -->
+    <link rel="stylesheet" href="css/all.min.css" />
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    {% endblock head %}
+
+    {% block body %}
+    <header>
+      <div class="inner-width">
+        <a href="#" class="logo"><img src="{{ url_for('static', filename='logo2.png') }}" alt="logo"></a>
+        <i class="menu-toggle-btn fas fa-bars"></i>
+  
+  
+        <nav id="navbarNav" class="navigation-menu stack-top">
+          <a href="#header"><i class="fas fa-home home"></i> Home</a>
+          <a href="/home"><i class="fab fa-buffer works"></i>Service</a>
+          <a href="#contactus"><i class="fas fa-headset contact"></i> Contact</a>
+        </nav>
+      </div>
+    </header>
+  
+  
+    <!-- about us -->
+    <section id="header" class="d-flex align-items-center">
+      <div class="container-fluid nav_bg">
+        <div class="row">
+          <div class="col-10 mx-auto">
+            <div class="row">
+              <div class="col-md-6 pt-5 pt-lg-0 order-2 order-lg-1 d-flex justify-content-center flex-column">
+                <h1>
+                  check your website SEO performance with
+                  <strong class="brand-name">SNC</strong>
+                </h1>
+  
+                <h2 class="my-3">
+                  this web application gives a report about website performance!
+                </h2>
+  
+                <form class="mt-3">
+                  <a class="btn-get-started" href="/home">Get started</a>
+                </form>
+              </div>
+  
+              <div class="col-lg-6 order-1 order-lg-2 header-img">
+                <img src="{{ url_for('static', filename='chiffrew-web-marketing.jpg') }}" class="img-fluid animated" alt="HomeImg" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  
+  
+    <!-- Start Contact -->
+  
+    <section id="contactus" class="contactus">
+      <div class="container">
+        <h2 class="special-heading">Contact Us</h2>
+        <p>Let's get in touch</p>
+        <div class="info">
+          <p class="label">Feel free to drop us a line at:</p>
+          <a href="mailto:crystals@mail.com?subject=Contact" class="link">SNC@mail.com</a>
+          <div class="social">
+            Find Us On Social Networks
+            <i class="fab fa-youtube"></i>
+            <i class="fab fa-facebook-f"></i>
+            <i class="fab fa-twitter"></i>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- End Contact -->
+    <!-- Start Footer -->
+    <div class="footer">&copy; 2022 <span>SNC</span> All Right Reserved</div>
+    <!-- End Footer -->
+  
+    {% endblock body %}
